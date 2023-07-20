@@ -27,4 +27,8 @@
     .container #section .result {
         text-align: justify;
     }
+
+    .container #section .input-box #lixeira{
+        margin-top: 10px;
+    }
 }

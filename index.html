@@ -30,12 +30,14 @@
             </div>
 
             <div class="input-box">
-                <button>Contar</button>
+                <button onclick="$toSend()">Contar</button>
+                <button onclick="$cleanInput()" id="lixeira">&#128465;&#65039;</button>
+
             </div>
 
             <div class="result">
-                <p>Contado: </p>
-                <span>4&#x1F449;8&#x1F449;12&#x1F449;16&#x1F449;20&#x1F449;24&#x1F449;28&#x1F449;32&#x1F449;36&#x1F3F4;</span>
+                <p>Contando: </p>
+                <span id="number"></span>
             </div>
         </section>
 
