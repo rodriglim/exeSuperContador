@@ -7,7 +7,9 @@
    <link rel="stylesheet" href="css/responsivel.css">
     <title>Super Contador</title>
 </head>
-<body>
+
+
+<body onload="$colorBackground()" id="body">
     
     <div class="container">
 
@@ -16,6 +18,12 @@
         </header>
 
         <section id="section">
+
+            <div class="button-dark">
+                <button onclick="$dark()">
+                    <span id="dark-span"></span>
+                </button>
+            </div>
             <div class="input-box">
                 <span>Início:</span>
                 <input type="number" name="inputBox" id="inicio">

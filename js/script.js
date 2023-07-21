@@ -1,5 +1,5 @@
 let res = document.getElementById('number');
-
+var $span = document.getElementById('dark-span');
 function $getInput($index) {
     return document.getElementsByName('inputBox')[$index].value;
 }
@@ -46,6 +46,42 @@ function $toSend() {
         $isCount();
     }else{
         alert('Field(s) Empty(s)!!!');
+    }
+}
+
+function $colorBackground(){
+
+    var $body = document.getElementById('body');
+    var $colorBack = getComputedStyle($body).backgroundColor;
+
+    if($colorBack == 'rgb(23, 131, 233)'){
+        $span.innerHTML = '&#9728;&#65039;';
+
+    }else{
+        $span.innerHTML = '	&#127761;';
+    }
+}
+
+function $dark(){
+    var $body = document.getElementById('body');
+    var $container = document.querySelector('#section');
+    var $colorBack = getComputedStyle($body).backgroundColor;
+
+    if($colorBack == 'rgb(23, 131, 233)'){
+        $body.style.background = 'black';
+        $container.style.color = '#FFF'
+        $container.style.background = 'black';
+        $span.innerHTML = '&#9728;&#65039;';
+
+
+    }else{
+        $body.style.background = 'rgb(23, 131, 233)';
+        $container.style.color = '#000'
+        $container.style.background = '#FFF';
+        $span.innerHTML = '	&#127761;';
+
+
+
     }
 }
 

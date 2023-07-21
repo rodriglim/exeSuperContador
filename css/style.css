@@ -102,5 +102,19 @@ body{
     font-style: italic;
 }
 
+.button-dark{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.button-dark button{
+    background: transparent;
+    border: 1px solid #aca4a4;
+    width: 50px;
+    height: 30px;
+    border-radius: 60px;
+}
 
 
